@@ -8,12 +8,14 @@ App criado com: TypeScript, Css, Html. (React)
 
 # Instruções
 
-Criar app - npx create-react-app star-wars-react-app --template typescript
-Abrir local da pasta - cd star-wars-react-app
-Adicionar Axios - yarn add axios
-Adicionar Icons - yarn add react-icons
-Adicionar React-Router-Dom - npm install --save @types/react-router-dom
-Executar app - yarn run start.
+<div>
+<p>Criar app - npx create-react-app star-wars-react-app --template typescript</p>
+<p>Abrir local da pasta - cd star-wars-react-app</p>
+<p>Adicionar Axios - yarn add axios</p>
+<p>Adicionar Icons - yarn add react-icons</p>
+<p>Adicionar React-Router-Dom - npm install --save @types/react-router-dom</p>
+<p>Executar app - yarn run start.</p>
+</div>
 
 <p align="center">
 <img src="/Star-Wars" width="500px" >
