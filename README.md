@@ -17,6 +17,8 @@ App criado com: TypeScript, Css, Html. (React)
 <p>Executar app - yarn run start.</p>
 </div>
 
+# Visual
+
 <p align="center">
-<img src="/Star-Wars.png" width="500px" >
+<img src="/Star-Wars.png" width="700px" >
 </p>
