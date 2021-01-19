@@ -18,5 +18,5 @@ App criado com: TypeScript, Css, Html. (React)
 </div>
 
 <p align="center">
-<img src="/Star-Wars" width="500px" >
+<img src="/Star-Wars.png" width="500px" >
 </p>
