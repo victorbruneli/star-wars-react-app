@@ -55,44 +55,44 @@ function Starships(props : any) {
           {favShips.length === 0 && <span> - </span>}
       </div>
 
-      <div className="films-box">
+      <div className="ships-box">
         {ships.map((p: any) =>
-          <div className="ships" key={p.title}>
-            {favShips.indexOf(p.title) < 0 &&
+          <div className="ships" key={p.name}>
+            {favShips.indexOf(p.name) < 0 &&
               <button
                 className="favorite-button"
                 type="button"
-                onClick={() => { addToFav(p.title); }}
+                onClick={() => { addToFav(p.name); }}
               >
                 <FiStar></FiStar>
               </button>
             }
 
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>name:</span> {p.name}
             </div>
             
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>model:</span> {p.model}
             </div>
 
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>manufacturer:</span> {p.manufacturer}
             </div>
 
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>cost_in_credits:</span> {p.cost_in_credits}
             </div>
 
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>length:</span> {p.length}
             </div>
 
-            <div className="people-attribute">
+            <div className="ships-attribute">
               <span>max_atmosphering_speed:</span> {p.max_atmosphering_speed}
             </div>
 
-            <div className="people-link-list">
+            <div className="ships-link-list">
               <span><BiPlanet /> Pilots</span>
               {p.pilots.length === 0 && <div>Nothing</div>}
               {p.pilots.map((pilots: any) =>
