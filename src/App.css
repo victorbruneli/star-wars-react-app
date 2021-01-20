@@ -84,6 +84,7 @@ button {
   border-radius: 10px;
   box-shadow: 5px 5px 2px 0px rgba(191, 170, 170, 0.25);
   background-color: #fff;
+  max-width: 25%;
 }
 
 .films {
@@ -93,6 +94,17 @@ button {
   border-radius: 10px;
   box-shadow: 5px 5px 2px 0px rgba(191, 170, 170, 0.25);
   background-color: #fff;
+  max-width: 30%;
+}
+
+.ships {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 0px rgba(191, 170, 170, 0.25);
+  background-color: #fff;
+  width: 25%;
 }
 
 .favorite-button {

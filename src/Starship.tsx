@@ -57,7 +57,7 @@ function Starships(props : any) {
 
       <div className="films-box">
         {ships.map((p: any) =>
-          <div className="films" key={p.title}>
+          <div className="ships" key={p.title}>
             {favShips.indexOf(p.title) < 0 &&
               <button
                 className="favorite-button"
