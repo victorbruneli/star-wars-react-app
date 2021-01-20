@@ -40,8 +40,8 @@ function Starships(props : any) {
         {ships.length === 0 && <><br />Loading...</>}
       </div>
       
-      <div className="favorites-box">
-          <span className="favorite-box-label">Favorites:</span>
+      <div className="ships-box-fav">
+          <span className="favorite-box-label">Favorites Starships:</span>
           {favShips.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}
               <button

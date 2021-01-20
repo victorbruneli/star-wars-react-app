@@ -41,8 +41,8 @@ function App(props : any) {
         {people.length === 0 && <><br />Loading...</>}
       </div>
       
-      <div className="favorite-box">
-          <span className="favorite-box-label">Favorites:</span>
+      <div className="favorite-box-people">
+          <span className="favorite-box-label">Favorites People:</span>
           {favorites.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}
               <button

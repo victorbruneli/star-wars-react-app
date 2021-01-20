@@ -24,11 +24,28 @@ button {
   text-align: center;
 }
 
-.favorite-box {
+.favorite-box-people {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+  border: 1px solid blue;
+}
+
+.teste-films {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid red;
+}
+
+.ships-box-fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid green;
 }
 
 .favorite-box-label {

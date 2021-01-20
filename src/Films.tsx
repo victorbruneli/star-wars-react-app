@@ -44,8 +44,8 @@ function Films(props : any) {
         {films.length === 0 && <><br />Loading...</>}
       </div>
       
-      <div className="favorites-box">
-          <span className="favorite-box-label">Favorites:</span>
+      <div className="teste-films">
+          <span className="favorite-box-label">Favorites Films:</span>
           {fav.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}
               <button
