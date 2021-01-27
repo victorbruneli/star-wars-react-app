@@ -94,3 +94,26 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.input-pesquisar {
+  margin-left: 5%;
+}
+
+.btn-pesquisar {
+  font-weight: bold;
+}
+
+.btn-previous {
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.div-pagina {
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.btn-next {
+  font-weight: bold;
+  margin-left: 5%;
+}

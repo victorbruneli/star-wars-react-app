@@ -106,7 +106,7 @@ function App(props : any) {
       </div>
 
       <form onSubmit={applySearch}>
-        <input
+        <input className='input-pesquisar'
           type="text"
           maxLength={50}
           value={searchDraft}
@@ -114,7 +114,7 @@ function App(props : any) {
           disabled={loadingData}
         />
         
-        <button
+        <button className='btn-pesquisar'
           type="submit"
           disabled={loadingData}
         >
@@ -122,7 +122,7 @@ function App(props : any) {
         </button>
       </form>
 
-      <button 
+      <button className='btn-previous'
         type="button"
         onClick={goToPreviousPage}
         disabled={loadingData || (data && !data.previous)}
@@ -130,9 +130,9 @@ function App(props : any) {
           Previous
       </button>
 
-      {data && <div>Página {page} de {totalPages}</div>}
+      {data && <div className='div-pagina'>Página {page} de {totalPages}</div>}
 
-      <button 
+      <button  className='btn-next'
         type="button"
         onClick={goToNextPage} 
         disabled={loadingData || (data && !data.next)}
