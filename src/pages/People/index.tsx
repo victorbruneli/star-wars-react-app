@@ -1,4 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, {
+  useState,
+  useMemo,
+  useEffect,
+  useCallback,
+  FormEvent,
+} from 'react';
+
 import axios from 'axios';
 
 import {
@@ -12,15 +19,58 @@ import {
 
 import './styles.css';
 
+interface PaginatedResult<T> {
+  count: number,
+  previous: string,
+  next: string,
+  results: T[]
+}
+
+const ITENS_PER_PAGE: number = 10;
+
 function App(props : any) {
-  const [people, setPeople] = useState<any>([]);
-  const [favorites, setFavorites] = useState<any>([]);
+  const [searchDraft, setSearchDraft] = useState<string>('');
+  const [search, setSearch] = useState<string>('');
+  const [page, setPage] = useState<number>(1);
+  const [loadingData, setLoadingData] = useState<boolean>(false);
+  const [data, setData] = useState<PaginatedResult<any>>();
+
+  const [favorites, setFavorites] = useState<any[]>([]);
+
+  const totalPages = useMemo(() => {
+    return data ? Math.ceil(data.count / ITENS_PER_PAGE) : 0;
+  }, [data]);
 
   useEffect(() => {
-    axios.get('https://swapi.dev/api/people/').then(response => {
-      setPeople(response.data.results);
-    })
+    setLoadingData(true);
+
+    const params ={
+      page,
+      search: search.trim() || undefined
+    };
+
+    axios.get('https://swapi.dev/api/people/', { params: params })
+      .then(response => {
+        setData(response.data);
+      })
+      .finally(() => {
+        setLoadingData(false);
+      })
+  }, [page, search]);
+
+  const goToPreviousPage = useCallback(() => {
+    setPage(page => page - 1)
   }, []);
+
+  const goToNextPage = useCallback(() => {
+    setPage(page => page + 1)
+  }, []);
+
+  const applySearch = useCallback((e : FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setPage(1);
+    setSearch(searchDraft);
+  }, [searchDraft]);
 
   const addToFavorite = useCallback((newFavorite: string) => {
     if (favorites.indexOf(newFavorite) < 0) {
@@ -37,12 +87,11 @@ function App(props : any) {
   return (
     <div>
       <div className="title">
-        {props.title ? props.title : 'Star Wars React App'}
-        {people.length === 0 && <><br />Loading...</>}
+        People
       </div>
-      
-      <div className="favorite-box-people">
-          <span className="favorite-box-label">Favorites People:</span>
+
+      <div className="favorite-box">
+          <span className="favorite-box-label">Favorites:</span>
           {favorites.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}
               <button
@@ -56,8 +105,47 @@ function App(props : any) {
           {favorites.length === 0 && <span> - </span>}
       </div>
 
+      <form onSubmit={applySearch}>
+        <input
+          type="text"
+          maxLength={50}
+          value={searchDraft}
+          onChange={e => setSearchDraft(e.target.value)}
+          disabled={loadingData}
+        />
+        
+        <button
+          type="submit"
+          disabled={loadingData}
+        >
+          Pesquisar
+        </button>
+      </form>
+
+      <button 
+        type="button"
+        onClick={goToPreviousPage}
+        disabled={loadingData || (data && !data.previous)}
+      >
+          Previous
+      </button>
+
+      {data && <div>Página {page} de {totalPages}</div>}
+
+      <button 
+        type="button"
+        onClick={goToNextPage} 
+        disabled={loadingData || (data && !data.next)}
+      >
+          Next
+      </button>
+
+      {loadingData && <h1>Loading</h1>}
+
+      {data && !data.results.length && <h1>No results</h1>}
+
       <div className="people-box">
-        {people.map((p: any) =>
+        {data && data.results.map((p: any) =>
           <div className="people" key={p.name}>
             {favorites.indexOf(p.name) < 0 &&
               <button
