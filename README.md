@@ -13,7 +13,8 @@ App criado com: TypeScript, Css, Html. (React)
 <p>Abrir local da pasta - cd star-wars-react-app</p>
 <p>Adicionar Axios - yarn add axios</p>
 <p>Adicionar Icons - yarn add react-icons</p>
-<p>Adicionar React-Router-Dom - npm install --save @types/react-router-dom</p>
+<p>Adicionar React-Router-Dom Types- npm install --save @types/react-router-dom </p>
+<p>Adicionar React-Router-Dom - npm install react-router-dom --save</p>
 <p>Executar app - yarn run start.</p>
 </div>
 
