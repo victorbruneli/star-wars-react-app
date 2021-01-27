@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
-import './App.css';
+import './styles.css';
 
 import {
   FiStar,
@@ -40,7 +40,7 @@ function Starships(props : any) {
         {ships.length === 0 && <><br />Loading...</>}
       </div>
       
-      <div className="ships-box-fav">
+      <div className="favorite-box-ships">
           <span className="favorite-box-label">Favorites Starships:</span>
           {favShips.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}

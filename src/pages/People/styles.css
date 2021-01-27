@@ -1,0 +1,98 @@
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.favorite-box-people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid blue;
+}
+
+.favorite-box-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.favorite-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  position: relative;
+}
+
+.favorite-item:not(:last-child):after {
+  content: ",";
+}
+
+.remove-favorite-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: red;
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+
+.favorite-item:hover .remove-favorite-button {
+  display: inline;
+}
+
+.people-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.people {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 0px rgba(191, 170, 170, 0.25);
+  background-color: #fff;
+  max-width: 25%;
+}
+
+.favorite-button {
+  float: right;
+}
+
+.people-attribute span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.people-link-list span {
+  font-size: larger;
+}
+
+.people-link-list span {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+.people-link-list span svg {
+  margin-right: 5px;
+}
+
+.people-link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

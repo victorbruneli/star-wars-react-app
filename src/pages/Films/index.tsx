@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
-import './App.css';
+import './styles.css';
 
 import {
   FiStar,
@@ -44,7 +44,7 @@ function Films(props : any) {
         {films.length === 0 && <><br />Loading...</>}
       </div>
       
-      <div className="teste-films">
+      <div className="favorite-box-films">
           <span className="favorite-box-label">Favorites Films:</span>
           {fav.map((favorite: string) => 
             <span className="favorite-item" key={favorite}>{favorite}

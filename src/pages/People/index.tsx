@@ -10,7 +10,7 @@ import {
   FiTrash2
 } from 'react-icons/fi';
 
-import './App.css';
+import './styles.css';
 
 function App(props : any) {
   const [people, setPeople] = useState<any>([]);
