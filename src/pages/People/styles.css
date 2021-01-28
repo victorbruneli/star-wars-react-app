@@ -96,24 +96,16 @@
 }
 
 .input-pesquisar {
-  margin-left: 5%;
+  margin-left: 40px;
 }
 
 .btn-pesquisar {
   font-weight: bold;
 }
 
-.btn-previous {
-  font-weight: bold;
-  margin-left: 5%;
-}
-
-.div-pagina {
-  font-weight: bold;
-  margin-left: 5%;
-}
-
+.btn-previous,
+.div-pagina,
 .btn-next {
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 40px;
 }

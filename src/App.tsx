@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
+import Home from './pages/Home';
 import People from './pages/People';
 import Films from './pages/Films';
 import Starships from './pages/Starship';
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
 
         <div className="menu">
+          <Link to="home">Home</Link>
           <Link to="people">People</Link>
           <Link to="films">Films</Link>
           <Link to="starships">Starships</Link>
@@ -26,7 +28,11 @@ function App() {
 
         <Switch>
           <Route path="/" exact>
-            <People title="PESSOAS LEGAIS"></People>
+            <Home title="PESSOAS LEGAIS"></Home>
+          </Route>
+
+          <Route path="/home">
+            <Home></Home>
           </Route>
 
           <Route path="/people">
