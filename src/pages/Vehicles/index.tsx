@@ -147,7 +147,7 @@ function Vehicles() {
 
       <div className="people-box">
         {data && data.results.map((p: any) =>
-          <div className="people" key={p.name}>
+          <div className="vehicles" key={p.name}>
             {favorites.indexOf(p.name) < 0 &&
               <button
                 className="favorite-button"
