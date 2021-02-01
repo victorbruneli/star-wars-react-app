@@ -2,7 +2,6 @@ html,
 body,
 #root {
   background-color: #f1f1f1;
-
   background-image: url(star.png);
   background-attachment: fixed;
 }
@@ -17,7 +16,15 @@ button {
 .menu {
   display: flex;
   justify-content: space-around;
-  border-bottom: 20px solid #ccc;
-  margin-bottom: 20px;
-  background-color: #ccc;
+  background-color: black;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
 }
