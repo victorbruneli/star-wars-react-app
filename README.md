@@ -23,3 +23,13 @@ App criado com: TypeScript, Css, Html. (React)
 <p align="center">
 <img src="/star-wars.png" width="700px" >
 </p>
+
+# Funções
+
+<div>
+<p>Pesquisar - Nome/Title
+<p>Adicionar - Favoritos
+<p>Remover - Favoritos
+<p>Avançar paginação
+<p>Voltar paginação
+</div>
