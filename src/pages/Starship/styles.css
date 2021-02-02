@@ -45,14 +45,14 @@
   display: inline;
 }
 
-.ships-box {
+.starships-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
 }
 
-.ships {
+.starships {
   margin: 10px;
   padding: 20px;
   border: 1px solid #ccc;
