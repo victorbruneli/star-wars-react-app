@@ -8,6 +8,7 @@ import Starships from './pages/Starship';
 import Vehicles from './pages/Vehicles';
 import Species from './pages/Species';
 import Planets from './pages/Planets';
+import History from './pages/History';
 
 import './App.css';
 
@@ -24,11 +25,12 @@ function App() {
           <Link to="vehicles">Vehicles</Link>
           <Link to="species">Species</Link>
           <Link to="planets">Planets</Link>
+          <Link to="history">History</Link>
         </div>
 
         <Switch>
           <Route path="/" exact>
-            <Home title="PESSOAS LEGAIS"></Home>
+            <Home title="Star Wars"></Home>
           </Route>
 
           <Route path="/home">
@@ -58,6 +60,11 @@ function App() {
           <Route path="/planets">
             <Planets></Planets>
           </Route>
+
+          <Route path="/history">
+            <History></History>
+          </Route>
+
         </Switch>
       </BrowserRouter>
     </div>
