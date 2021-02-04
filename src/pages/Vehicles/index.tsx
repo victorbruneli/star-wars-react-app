@@ -10,7 +10,6 @@ import axios from 'axios';
 
 import {
   FiFilm,
-  FiTruck,
   FiStar,
   FiTrash2
 } from 'react-icons/fi';
@@ -145,7 +144,7 @@ function Vehicles() {
 
       {data && !data.results.length && <h1>No results</h1>}
 
-      <div className="people-box">
+      <div className="vehicles-box">
         {data && data.results.map((p: any) =>
           <div className="vehicles" key={p.name}>
             {favorites.indexOf(p.name) < 0 &&
@@ -158,60 +157,59 @@ function Vehicles() {
               </button>
             }
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Name:</span> {p.name}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Model:</span> {p.model}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Mass:</span> {p.mass}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Manufacturer:</span> {p.manufacturer}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Skin Color:</span> {p.skin_color}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Cost in credits:</span> {p.cost_in_credits}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Length:</span> {p.length}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>max_atmosphering_speed:</span> {p.max_atmosphering_speed}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>crew:</span> {p.crew}
             </div>
 
-
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Passengers:</span> {p.passengers}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Cargo capacity:</span> {p.cargo_capacity}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Consumables:</span> {p.consumables}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Vehicle class:</span> {p.vehicle_class}
             </div>
 
-            <div className="people-link-list">
+            <div className="vehicles-link-list">
               <span><GiPlanePilot /> Pilots</span>
               {p.pilots.length === 0 && <div>Nothing</div>}
               {p.pilots.map((pilot: any) =>
@@ -219,7 +217,7 @@ function Vehicles() {
               )}
             </div>
             
-            <div className="people-link-list">
+            <div className="vehicles-link-list">
               <span><FiFilm /> Species</span>
               {p.films.length === 0 && <div>Nothing</div>}
               {p.films.map((film: any) =>
@@ -227,15 +225,15 @@ function Vehicles() {
               )}
             </div>
             
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Created At:</span> {p.created}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>Edited At:</span> {p.edited}
             </div>
 
-            <div className="people-attribute">
+            <div className="vehicles-attribute">
               <span>URL:</span> <a href={p.url}>{p.url}</a>
             </div>
           </div>

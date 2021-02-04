@@ -157,32 +157,32 @@ function Films(props : any) {
               </button>
             }
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>Title:</span> {p.title}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>episode_id:</span> {p.episode_id}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>opening_crawl:</span> {p.opening_crawl}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>director:</span> {p.director}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>producer:</span> {p.producer}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>release_date:</span> {p.release_date}
             </div>
 
 
-            <div className="people-link-list">
+            <div className="films-link-list">
               <span><FiFilm /> Characters</span>
               {p.characters.characters === 0 && <div>Nothing</div>}
               {p.characters.map((character: any) =>
@@ -190,7 +190,7 @@ function Films(props : any) {
               )}
             </div>
 
-            <div className="people-link-list">
+            <div className="films-link-list">
               <span><FiZap/> Planets</span>
               {p.planets.length === 0 && <div>Nothing</div>}
               {p.planets.map((planet: any) =>
@@ -198,7 +198,7 @@ function Films(props : any) {
               )}
             </div>
 
-            <div className="people-link-list">
+            <div className="films-link-list">
               <span><FiZap/> Starships</span>
               {p.starships.length === 0 && <div>Nothing</div>}
               {p.starships.map((starship: any) =>
@@ -206,7 +206,7 @@ function Films(props : any) {
               )}
             </div>
 
-            <div className="people-link-list">
+            <div className="films-link-list">
               <span><FiTruck/> Vehicles</span>
               {p.vehicles.length === 0 && <div>Nothing</div>}
               {p.vehicles.map((vehicle: any) =>
@@ -214,7 +214,7 @@ function Films(props : any) {
               )}
             </div>
 
-            <div className="people-link-list">
+            <div className="films-link-list">
               <span><FiTwitter /> Species</span>
               {p.species.length === 0 && <div>Nothing</div>}
               {p.species.map((specie: any) =>
@@ -222,15 +222,15 @@ function Films(props : any) {
               )}
             </div>
             
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>Created At:</span> {p.created}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>Edited At:</span> {p.edited}
             </div>
 
-            <div className="people-attribute">
+            <div className="films-attribute">
               <span>URL:</span> <a href={p.url}>{p.url}</a>
             </div>
           </div>

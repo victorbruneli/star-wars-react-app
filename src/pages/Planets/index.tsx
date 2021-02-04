@@ -10,14 +10,9 @@ import axios from 'axios';
 
 import {
   FiFilm,
-  FiTruck,
   FiStar,
   FiTrash2
 } from 'react-icons/fi';
-
-import{
-  GiPlanePilot  
-}from 'react-icons/gi';
 
 import './styles.css';
 
@@ -158,43 +153,43 @@ function Planets() {
               </button>
             }
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>Name:</span> {p.name}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>rotation_period:</span> {p.rotation_period}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>orbital_period:</span> {p.orbital_period}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>diameter:</span> {p.diameter}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>climate:</span> {p.climate}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>gravity:</span> {p.gravity}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>terrain:</span> {p.terrain}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>surface_water:</span> {p.surface_water}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>population:</span> {p.population}
             </div>
 
-            <div className="people-link-list">
+            <div className="planets-link-list">
               <span><FiFilm /> Species</span>
               {p.residents.length === 0 && <div>Nothing</div>}
               {p.residents.map((resident: any) =>
@@ -202,7 +197,7 @@ function Planets() {
               )}
             </div>
 
-            <div className="people-link-list">
+            <div className="planets-link-list">
               <span><FiFilm /> Species</span>
               {p.films.length === 0 && <div>Nothing</div>}
               {p.films.map((film: any) =>
@@ -210,15 +205,15 @@ function Planets() {
               )}
             </div>
             
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>Created At:</span> {p.created}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>Edited At:</span> {p.edited}
             </div>
 
-            <div className="people-attribute">
+            <div className="planets-attribute">
               <span>URL:</span> <a href={p.url}>{p.url}</a>
             </div>
           </div>

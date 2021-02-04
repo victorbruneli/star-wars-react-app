@@ -155,47 +155,47 @@ function Species(props : any) {
               </button>
             }
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>Name:</span> {p.name}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>classification:</span> {p.classification}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>designation:</span> {p.designation}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>average_height:</span> {p.average_height}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>Skin Color:</span> {p.skin_color}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>hair_colors:</span> {p.hair_colors}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>eye_colors:</span> {p.eye_colors}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>average_lifespan:</span> {p.average_lifespan}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>Homeworld:</span> <a href={p.homeworld}>{p.homeworld}</a>
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>language:</span> {p.language}
             </div>
 
-            <div className="people-link-list">
+            <div className="species-link-list">
               <span><FiFilm /> Films</span>
               {p.films.length === 0 && <div>Nothing</div>}
               {p.films.map((film: any) =>
@@ -203,7 +203,7 @@ function Species(props : any) {
               )}
             </div>
             
-            <div className="people-link-list">
+            <div className="species-link-list">
               <span><FiTwitter /> People</span>
               {p.people.length === 0 && <div>Nothing</div>}
               {p.people.map((peop: any) =>
@@ -211,15 +211,15 @@ function Species(props : any) {
               )}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>Created At:</span> {p.created}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>Edited At:</span> {p.edited}
             </div>
 
-            <div className="people-attribute">
+            <div className="species-attribute">
               <span>URL:</span> <a href={p.url}>{p.url}</a>
             </div>
           </div>

@@ -66,16 +66,16 @@
   float: right;
 }
 
-.ships-attribute span {
+.planets-attribute span {
   font-weight: bold;
   margin-right: 5px;
 }
 
-.ships-link-list span {
+.planets-link-list span {
   font-size: larger;
 }
 
-.ships-link-list span {
+.planets-link-list span {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
@@ -83,11 +83,11 @@
   margin-bottom: 5px;
 }
 
-.people-link-list span svg {
+.planets-link-list span svg {
   margin-right: 5px;
 }
 
-.ships-link-list {
+.planets-link-list {
   display: flex;
   flex-direction: column;
   align-items: center;
