@@ -22,11 +22,11 @@ function Home(props:any){
       <div className="home">
         Link de cada API utilizada no projeto:
       <p><span>People:    <a href="https://swapi.dev/api/people/">https://swapi.dev/api/people/</a></span></p>
-      <p><span>Planets:   <a href="https://swapi.dev/api/planets/">https://swapi.dev/api/planets/</a></span></p>
       <p><span>Films:     <a href="https://swapi.dev/api/films/">https://swapi.dev/api/films/</a></span></p>
-      <p><span>Species:   <a href="https://swapi.dev/api/species/">https://swapi.dev/api/species/</a></span></p>
-      <p><span>Vehicles:  <a href="https://swapi.dev/api/vehicles/">https://swapi.dev/api/vehicles/</a></span></p>
       <p><span>Starships: <a href="https://swapi.dev/api/starships/">https://swapi.dev/api/starships/</a></span></p>
+      <p><span>Vehicles:  <a href="https://swapi.dev/api/vehicles/">https://swapi.dev/api/vehicles/</a></span></p>
+      <p><span>Species:   <a href="https://swapi.dev/api/species/">https://swapi.dev/api/species/</a></span></p>
+      <p><span>Planets:   <a href="https://swapi.dev/api/planets/">https://swapi.dev/api/planets/</a></span></p>
       </div>
 
       <div className="info">
