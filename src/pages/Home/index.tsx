@@ -27,6 +27,8 @@ function Home(props:any){
       <p><span>Vehicles:  <a href="https://swapi.dev/api/vehicles/">https://swapi.dev/api/vehicles/</a></span></p>
       <p><span>Species:   <a href="https://swapi.dev/api/species/">https://swapi.dev/api/species/</a></span></p>
       <p><span>Planets:   <a href="https://swapi.dev/api/planets/">https://swapi.dev/api/planets/</a></span></p>
+      <p><span>History:   <a href="https://starwars.fandom.com/pt/wiki/Star_Wars">https://starwars.fandom.com/pt/wiki/Star_Wars</a></span></p>
+      
       </div>
 
       <div className="info">
